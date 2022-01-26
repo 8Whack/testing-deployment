@@ -10,8 +10,8 @@ app.get('/', (req, res) =>{
 });
 
 app.use(express.json());
-app.use('/js', express.static(path.join(__dirname, 'public/main.js')))
-app.use('/styles', express.static(path.join(__dirname, 'public/styles.css')))
+app.use('/js', express.static(path.join(__dirname, '/main.js')))
+app.use('/styles', express.static(path.join(__dirname, '/styles.css')))
 
 app.listen(port, ()=>{
     console.log("listening on port " + port)
